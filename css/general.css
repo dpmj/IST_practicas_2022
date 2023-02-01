@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 600px;
+}
+
+div.fondo_titulo {
+    background-image: url("../img/logos/CPI.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50%;
+    height: 150px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+img.logo_derecha, img.logo_izquierda {
+    height: 100px;
+    box-sizing: border-box;
+    margin: 0;
+    width: auto;
+    display: inline;
+}
+
+img.logo_izquierda {
+    float: left;
+}
+
+img.logo_derecha {
+    float: right;
+    padding: 10px;
+}
+
+header.titulo_principal {
+    text-align: center;
+    background-color: #e3e1ec;
+    margin: 0;
+    padding: 0;
+}
+
+header.titulo_principal a {
+    color: royalblue;
+    text-decoration: none;
+}
+
+header.titulo_principal h1 {
+    display: inline;
+    box-sizing: border-box;
+    line-height: 100px;
+    width: auto;
+    font-family: "Orbitron", sans-serif;
+}
+
+nav.menu_principal {
+    background-color: #EEE;
+    border-top: 3px;
+    border-bottom: 3px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #AAA;
+    border-style: solid;
+    margin: 0;
+}
+
+nav.menu_principal ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav.menu_principal ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    /* Arreglar las modificaciones de bootstrap */
+    /* font-family: 'Times New Roman', Times, serif;
+    box-sizing: content-box;  */
+    /* (Comentadas porque en mi caso no surgen efecto y bootstrap no supone un gran problema) */
+}
+
+nav.menu_principal ul li a {
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+    color: black;
+    transition-duration: 0.4s;  /* Añade una ligera suavidad al cambio de color por hover */
+}
+
+nav.menu_principal ul li a[href="#"] {
+    background-color: #CCC;
+}
+
+nav.menu_principal ul li a:hover {
+    background-color: #AAA;
+}
+
+div.central {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;  /* Para que se mantenga el sticky */
+}
+
+div.centro {
+    width: 80%;
+}
+
+div.publicidad {
+    width: 10%;
+    position: sticky;  /* Se mantiene fija en el campo de visión del usuario*/
+    top: 0%;  /* Pegada al borde superior */
+}
+
+div.publicidad img {
+    width: 100%;  /* Para que la imagen ocupe todo el espacio horizontal que tiene*/
+    height: 100%;  /* Para que la imagen no se comprima en algunas situaciones */
+}
+
+footer {
+    margin-bottom: 20px;
+}
+
+/* ESTILOS DEL IFRAME Y DE LOS BOTONES DE OCIO */
+
+iframe#iframe_solitario {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 90%;
+    height: 660px;
+    border: 2px solid black;
+    border-radius: 10px;
+    /* border-radius: 1px;
+    border-color: black;
+    border-style: solid; */
+    /* aspect-ratio: calc(3 / 2); */
+}
+
+div#botones_seleccionar_juego {
+    margin-top: 30px;
+}
+
+div#botones_seleccionar_juego .btn-primary a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
